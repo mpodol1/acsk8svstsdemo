@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-// api --------------------------------------------------------------------
+// api ----------------------------------------------------------------------
 app.get('/api', function (req, res) {
     // Increment requestCount each time API is called
     if (!redis) {
