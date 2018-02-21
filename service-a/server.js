@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(morgan("dev"));
 
-// application -------------------------------------------------------------------
+// application --------------------------------------------------------------------
 app.get('/', function (req, res) {
     console.log('/ request');
     res.sendFile(__dirname + '/public/index.html');
